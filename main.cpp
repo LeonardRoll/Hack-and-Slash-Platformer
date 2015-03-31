@@ -75,9 +75,13 @@ int main()
 			if(++b > 255)
 				b = 0;
 		}
-		if(keys_pressed[KEY_W])
+		if(keys_pressed[KEY_D])
 		{
-			//Move Player UP
+			Main_Character->right();
+		}
+		if(keys_pressed[KEY_A])
+		{
+			Main_Character->left();
 		}
 
 		al_clear_to_color(al_map_rgb(r,g,b)); // clear display to RGB code
@@ -85,7 +89,7 @@ int main()
 		//Bitmap Draw
 		al_draw_bitmap(Main_Char_BMP,0,0,0);
 		//Text Draw
-		Main_GUI->shrink_Health_Bar(1); //Used For Testing Healthbar
+		//Main_GUI->shrink_Health_Bar(1); //Used For Testing Healthbar
 		Main_GUI->TEST();
 		Main_GUI->GUI_Draw();
 		Main_Character->Character_Draw();
@@ -207,7 +211,7 @@ void process_events()
 
 	bool got_event = al_get_next_event(event_queue, &allegro_event);//get the next event on the queue
 
-	if(got_event == false) //when there is no eveent waiting
+	if(got_event == false) //when there is no event waiting
 		return;
 
 	if(allegro_event.type == ALLEGRO_EVENT_KEY_DOWN) // Test if the key is pressed down
@@ -217,31 +221,24 @@ void process_events()
 			case ALLEGRO_KEY_ESCAPE:
 				keys_pressed[KEY_ESCAPE] = true;
 				break;
-			
 			case ALLEGRO_KEY_R:
 				keys_pressed[KEY_R] = true;
 				break;
-			
 			case ALLEGRO_KEY_G:
 				keys_pressed[KEY_G] = true;
 				break;
-			
 			case ALLEGRO_KEY_B:
 				keys_pressed[KEY_B] = true;
 				break;
-
 			case ALLEGRO_KEY_W:
 				keys_pressed[KEY_W] = true;
 				break;
-
 			case ALLEGRO_KEY_A:
 				keys_pressed[KEY_A] = true;
 				break;
-
 			case ALLEGRO_KEY_S:
 				keys_pressed[KEY_S] = true;
 				break;
-
 			case ALLEGRO_KEY_D:
 				keys_pressed[KEY_D] = true;
 				break;
@@ -255,31 +252,24 @@ void process_events()
 			case ALLEGRO_KEY_ESCAPE:
 				keys_pressed[KEY_ESCAPE] = false;
 				break;
-			
 			case ALLEGRO_KEY_R:
 				keys_pressed[KEY_R] = false;
 				break;
-			
 			case ALLEGRO_KEY_G:
 				keys_pressed[KEY_G] = false;
 				break;
-			
 			case ALLEGRO_KEY_B:
 				keys_pressed[KEY_B] = false;
 				break;
-
 			case ALLEGRO_KEY_W:
 				keys_pressed[KEY_W] = false;
 				break;
-
 			case ALLEGRO_KEY_A:
 				keys_pressed[KEY_A] = false;
 				break;
-
 			case ALLEGRO_KEY_S:
 				keys_pressed[KEY_S] = false;
 				break;
-
 			case ALLEGRO_KEY_D:
 				keys_pressed[KEY_D] = false;
 				break;

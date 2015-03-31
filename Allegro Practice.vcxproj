@@ -78,12 +78,14 @@
     <ClCompile Include="GUI.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Main_Char.cpp" />
+    <ClCompile Include="Text_File_Reader.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Background.h" />
     <ClInclude Include="Character.h" />
     <ClInclude Include="GUI.h" />
     <ClInclude Include="Main_Char.h" />
+    <ClInclude Include="Text_File_Reader.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
