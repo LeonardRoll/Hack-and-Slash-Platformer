@@ -3,6 +3,7 @@
 /*Includes*/
 #include <iostream>
 #include <fstream>
+#include <string>
 using namespace std;
 
 /*
@@ -13,6 +14,10 @@ using namespace std;
 
 class Text_File_Reader
 {
-	Text_File_Reader init_Reader();//Constructor
-	string read_text(string filename);//function that will read 
+	private:
+		fstream textFile; //Text file to read or write
+		string line;
+	public:
+		Text_File_Reader();//Constructor
+		string read_text(string filename,int line);//function that will read and return specific lines
 };

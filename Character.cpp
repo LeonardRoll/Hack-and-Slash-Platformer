@@ -1,9 +1,10 @@
 #include "Character.h"
 
-Character::Character(string name, string filename, int spawnX, int spawnY)
+Character::Character(string name, string filename, int spawnX, int spawnY, double M_speed)
 {
 	m_name = name;
 	m_xpos = spawnX; m_ypos = spawnY;
+	m_M_speed = M_speed;
 	Char_BMP = al_load_bitmap(filename.c_str());
 
 	if(!Char_BMP)
@@ -28,12 +29,12 @@ void Character::setYpos(int ypos){m_ypos = ypos;};
 
 void Character::left() //This will move the character to the left
 {
-	m_xpos--;
+	m_xpos = m_xpos - m_M_speed;
 }
 
 void Character::right() //This will move the character to the right
 {
-	m_xpos++;
+	m_xpos = m_xpos + m_M_speed;
 }
 
 void Character::crouchOrClimb() //This will make the character crouch or climb depending on where the character is standing

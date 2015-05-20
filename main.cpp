@@ -182,7 +182,7 @@ int initialize_allegro()
 	}
 
 	//Main Character
-	Main_Character = new Main_Char(0,0,"Hero","../Assets/Bitmaps/Place_Holder.bmp",10);
+	Main_Character = new Main_Char(0,0,"Hero","../Assets/Bitmaps/Place_Holder.bmp",10,2.0);
 
 
 	Main_GUI = new GUI(screen_width,screen_height);

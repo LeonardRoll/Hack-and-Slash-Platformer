@@ -1,16 +1,18 @@
-﻿Build started 31/03/2015 13:47:40.
+﻿Build started 16/05/2015 23:08:03.
      1>Project "C:\Users\Raymund\Documents\Game Stuff\2D Game Practice\Allegro Practice\Allegro Practice.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\Allegro Practice.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
-         main.cpp
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Monster.cpp
+         Monster.cpp
        Link:
          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Raymund\Documents\Game Stuff\2D Game Practice\Allegro Practice\Debug\Allegro Practice.exe" /NOLOGO "allegro-5.0.10-monolith-md-debug.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Allegro Practice.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Raymund\Documents\Game Stuff\2D Game Practice\Allegro Practice\Debug\Allegro Practice.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Raymund\Documents\Game Stuff\2D Game Practice\Allegro Practice\Debug\Allegro Practice.lib" /MACHINE:X86 Debug\Background.obj
          Debug\Character.obj
          Debug\GUI.obj
          Debug\main.obj
          Debug\Main_Char.obj
+         Debug\Monster.obj
+         Debug\Text_File_Reader.obj
          LINK : C:\Users\Raymund\Documents\Game Stuff\2D Game Practice\Allegro Practice\Debug\Allegro Practice.exe not found or not built by the last incremental link; performing full link
          Allegro Practice.vcxproj -> C:\Users\Raymund\Documents\Game Stuff\2D Game Practice\Allegro Practice\Debug\Allegro Practice.exe
        Manifest:
@@ -22,4 +24,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.02
+Time Elapsed 00:00:04.79
